@@ -19,12 +19,13 @@ Usage:
 
 ```go
 // KubectlLayer bundles the 'kubectl' and 'helm' command lines
-import { KubectlV34Layer } from '@aws-cdk/lambda-layer-kubectl-v32';
-import * as lambda from 'aws-cdk-lib/aws-lambda';
+import "github.com/cdklabs/awscdk-kubectl-go/kubectlv34"
+import lambda "github.com/aws/aws-cdk-go/awscdk"
 
-declare const fn: lambda.Function;
-const kubectl = new KubectlV34Layer(this, 'KubectlLayer');
-fn.addLayers(kubectl);
+var fn Function
+
+kubectl := kubectlv34.NewKubectlV34Layer(this, jsii.String("KubectlLayer"))
+fn.AddLayers(kubectl)
 ```
 
 `kubectl` will be installed under `/opt/kubectl/kubectl`, and `helm` will be installed under `/opt/helm/helm`.
