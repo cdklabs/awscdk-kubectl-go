@@ -8,23 +8,24 @@
 ---
 <!--END STABILITY BANNER-->
 
-This module exports a single class called `KubectlV34Layer` which is a `lambda.LayerVersion` that
+This module exports a single class called `KubectlV35Layer` which is a `lambda.LayerVersion` that
 bundles the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/kubectl/) and the
 [`helm`](https://helm.sh/) command line.
 
-> * Helm Version: 3.19.0
+> * Helm Version: 4.1.0
 > * Kubectl Version: 1.35.0
 
 Usage:
 
 ```go
 // KubectlLayer bundles the 'kubectl' and 'helm' command lines
-import { KubectlV34Layer } from '@aws-cdk/lambda-layer-kubectl-v32';
-import * as lambda from 'aws-cdk-lib/aws-lambda';
+import "github.com/cdklabs/awscdk-kubectl-go/kubectlv35"
+import lambda "github.com/aws/aws-cdk-go/awscdk"
 
-declare const fn: lambda.Function;
-const kubectl = new KubectlV34Layer(this, 'KubectlLayer');
-fn.addLayers(kubectl);
+var fn Function
+
+kubectl := kubectlv35.NewKubectlV35Layer(this, jsii.String("KubectlLayer"))
+fn.AddLayers(kubectl)
 ```
 
 `kubectl` will be installed under `/opt/kubectl/kubectl`, and `helm` will be installed under `/opt/helm/helm`.
