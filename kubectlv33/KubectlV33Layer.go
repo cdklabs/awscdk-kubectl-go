@@ -6,6 +6,8 @@ import (
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"
+	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces"
+	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces/interfacesawslambda"
 	"github.com/aws/constructs-go/constructs/v10"
 	"github.com/cdklabs/awscdk-kubectl-go/kubectlv33/v2/internal"
 )
@@ -17,15 +19,18 @@ type KubectlV33Layer interface {
 	CompatibleRuntimes() *[]awslambda.Runtime
 	// The environment this resource belongs to.
 	//
-	// For resources that are created and managed by the CDK
-	// (generally, those created by creating new class instances like Role, Bucket, etc.),
-	// this is always the same as the environment of the stack they belong to;
-	// however, for imported resources
-	// (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
-	// that might be different than the stack they were imported into.
-	Env() *awscdk.ResourceEnvironment
+	// For resources that are created and managed in a Stack (those created by
+	// creating new class instances like `new Role()`, `new Bucket()`, etc.), this
+	// is always the same as the environment of the stack they belong to.
+	//
+	// For referenced resources (those obtained from referencing methods like
+	// `Role.fromRoleArn()`, `Bucket.fromBucketName()`, etc.), they might be
+	// different than the stack they were imported into.
+	Env() *interfaces.ResourceEnvironment
 	// The ARN of the Lambda Layer version that this Layer defines.
 	LayerVersionArn() *string
+	// A reference to a LayerVersion resource.
+	LayerVersionRef() *interfacesawslambda.LayerVersionReference
 	// The tree node.
 	Node() constructs.Node
 	// Returns a string-encoded token that resolves to the physical name that should be passed to the CloudFormation resource.
@@ -90,8 +95,8 @@ func (j *jsiiProxy_KubectlV33Layer) CompatibleRuntimes() *[]awslambda.Runtime {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV33Layer) Env() *awscdk.ResourceEnvironment {
-	var returns *awscdk.ResourceEnvironment
+func (j *jsiiProxy_KubectlV33Layer) Env() *interfaces.ResourceEnvironment {
+	var returns *interfaces.ResourceEnvironment
 	_jsii_.Get(
 		j,
 		"env",
@@ -105,6 +110,16 @@ func (j *jsiiProxy_KubectlV33Layer) LayerVersionArn() *string {
 	_jsii_.Get(
 		j,
 		"layerVersionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubectlV33Layer) LayerVersionRef() *interfacesawslambda.LayerVersionReference {
+	var returns *interfacesawslambda.LayerVersionReference
+	_jsii_.Get(
+		j,
+		"layerVersionRef",
 		&returns,
 	)
 	return returns
@@ -265,6 +280,17 @@ func KubectlV33Layer_IsResource(construct constructs.IConstruct) *bool {
 		&returns,
 	)
 
+	return returns
+}
+
+func KubectlV33Layer_PROPERTY_INJECTION_ID() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@aws-cdk/lambda-layer-kubectl-v33.KubectlV33Layer",
+		"PROPERTY_INJECTION_ID",
+		&returns,
+	)
 	return returns
 }
 
