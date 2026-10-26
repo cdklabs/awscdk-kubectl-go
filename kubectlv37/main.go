@@ -1,5 +1,5 @@
-// A Lambda Layer that contains kubectl v1.36
-package kubectlv36
+// A Lambda Layer that contains kubectl v1.37
+package kubectlv37
 
 import (
 	"reflect"
@@ -9,8 +9,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
-		reflect.TypeOf((*KubectlV36Layer)(nil)).Elem(),
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
+		reflect.TypeOf((*KubectlV37Layer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addPermission", GoMethod: "AddPermission"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
@@ -27,7 +27,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_KubectlV36Layer{}
+			j := jsiiProxy_KubectlV37Layer{}
 			_jsii_.InitJsiiProxy(&j.Type__awslambdaLayerVersion)
 			return &j
 		},

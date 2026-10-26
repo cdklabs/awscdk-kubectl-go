@@ -1,9 +1,9 @@
-module github.com/cdklabs/awscdk-kubectl-go/kubectlv36/v2
+module github.com/cdklabs/awscdk-kubectl-go/kubectlv37/v2
 
-go 1.25
+go 1.26
 
 require (
-	github.com/aws/jsii-runtime-go v1.139.0
+	github.com/aws/jsii-runtime-go v1.141.0
 	github.com/aws/aws-cdk-go/awscdk/v2 v2.224.0
 	github.com/aws/constructs-go/constructs/v10 v10.0.5
 	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.242 // indirect

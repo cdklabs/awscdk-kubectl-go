@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package kubectlv36
+package kubectlv37
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func (k *jsiiProxy_KubectlV36Layer) validateAddPermissionParameters(id *string, permission *awslambda.LayerVersionPermission) error {
+func (k *jsiiProxy_KubectlV37Layer) validateAddPermissionParameters(id *string, permission *awslambda.LayerVersionPermission) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -27,7 +27,7 @@ func (k *jsiiProxy_KubectlV36Layer) validateAddPermissionParameters(id *string, 
 	return nil
 }
 
-func (k *jsiiProxy_KubectlV36Layer) validateApplyRemovalPolicyParameters(policy awscdk.RemovalPolicy) error {
+func (k *jsiiProxy_KubectlV37Layer) validateApplyRemovalPolicyParameters(policy awscdk.RemovalPolicy) error {
 	if policy == "" {
 		return fmt.Errorf("parameter policy is required, but nil was provided")
 	}
@@ -35,7 +35,7 @@ func (k *jsiiProxy_KubectlV36Layer) validateApplyRemovalPolicyParameters(policy 
 	return nil
 }
 
-func (k *jsiiProxy_KubectlV36Layer) validateGetResourceArnAttributeParameters(arnAttr *string, arnComponents *awscdk.ArnComponents) error {
+func (k *jsiiProxy_KubectlV37Layer) validateGetResourceArnAttributeParameters(arnAttr *string, arnComponents *awscdk.ArnComponents) error {
 	if arnAttr == nil {
 		return fmt.Errorf("parameter arnAttr is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (k *jsiiProxy_KubectlV36Layer) validateGetResourceArnAttributeParameters(ar
 	return nil
 }
 
-func (k *jsiiProxy_KubectlV36Layer) validateGetResourceNameAttributeParameters(nameAttr *string) error {
+func (k *jsiiProxy_KubectlV37Layer) validateGetResourceNameAttributeParameters(nameAttr *string) error {
 	if nameAttr == nil {
 		return fmt.Errorf("parameter nameAttr is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (k *jsiiProxy_KubectlV36Layer) validateGetResourceNameAttributeParameters(n
 	return nil
 }
 
-func validateKubectlV36Layer_FromLayerVersionArnParameters(scope constructs.Construct, id *string, layerVersionArn *string) error {
+func validateKubectlV37Layer_FromLayerVersionArnParameters(scope constructs.Construct, id *string, layerVersionArn *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func validateKubectlV36Layer_FromLayerVersionArnParameters(scope constructs.Cons
 	return nil
 }
 
-func validateKubectlV36Layer_FromLayerVersionAttributesParameters(scope constructs.Construct, id *string, attrs *awslambda.LayerVersionAttributes) error {
+func validateKubectlV37Layer_FromLayerVersionAttributesParameters(scope constructs.Construct, id *string, attrs *awslambda.LayerVersionAttributes) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
@@ -93,7 +93,7 @@ func validateKubectlV36Layer_FromLayerVersionAttributesParameters(scope construc
 	return nil
 }
 
-func validateKubectlV36Layer_IsConstructParameters(x interface{}) error {
+func validateKubectlV37Layer_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -101,7 +101,7 @@ func validateKubectlV36Layer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKubectlV36Layer_IsOwnedResourceParameters(construct constructs.IConstruct) error {
+func validateKubectlV37Layer_IsOwnedResourceParameters(construct constructs.IConstruct) error {
 	if construct == nil {
 		return fmt.Errorf("parameter construct is required, but nil was provided")
 	}
@@ -109,7 +109,7 @@ func validateKubectlV36Layer_IsOwnedResourceParameters(construct constructs.ICon
 	return nil
 }
 
-func validateKubectlV36Layer_IsResourceParameters(construct constructs.IConstruct) error {
+func validateKubectlV37Layer_IsResourceParameters(construct constructs.IConstruct) error {
 	if construct == nil {
 		return fmt.Errorf("parameter construct is required, but nil was provided")
 	}
@@ -117,7 +117,7 @@ func validateKubectlV36Layer_IsResourceParameters(construct constructs.IConstruc
 	return nil
 }
 
-func validateNewKubectlV36LayerParameters(scope constructs.Construct, id *string) error {
+func validateNewKubectlV37LayerParameters(scope constructs.Construct, id *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

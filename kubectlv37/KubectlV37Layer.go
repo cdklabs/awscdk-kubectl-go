@@ -1,20 +1,20 @@
-package kubectlv36
+package kubectlv37
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdklabs/awscdk-kubectl-go/kubectlv36/v2/jsii"
+	_init_ "github.com/cdklabs/awscdk-kubectl-go/kubectlv37/v2/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"
 	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces"
 	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces/interfacesawslambda"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdklabs/awscdk-kubectl-go/kubectlv36/v2/internal"
+	"github.com/cdklabs/awscdk-kubectl-go/kubectlv37/v2/internal"
 )
 
 // A CDK Asset construct that contains `kubectl` and `helm`.
 // Experimental.
-type KubectlV36Layer interface {
+type KubectlV37Layer interface {
 	awslambda.LayerVersion
 	// The runtimes compatible with this Layer.
 	// Experimental.
@@ -94,12 +94,12 @@ type KubectlV36Layer interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for KubectlV36Layer
-type jsiiProxy_KubectlV36Layer struct {
+// The jsii proxy struct for KubectlV37Layer
+type jsiiProxy_KubectlV37Layer struct {
 	internal.Type__awslambdaLayerVersion
 }
 
-func (j *jsiiProxy_KubectlV36Layer) CompatibleRuntimes() *[]awslambda.Runtime {
+func (j *jsiiProxy_KubectlV37Layer) CompatibleRuntimes() *[]awslambda.Runtime {
 	var returns *[]awslambda.Runtime
 	_jsii_.Get(
 		j,
@@ -109,7 +109,7 @@ func (j *jsiiProxy_KubectlV36Layer) CompatibleRuntimes() *[]awslambda.Runtime {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV36Layer) Env() *interfaces.ResourceEnvironment {
+func (j *jsiiProxy_KubectlV37Layer) Env() *interfaces.ResourceEnvironment {
 	var returns *interfaces.ResourceEnvironment
 	_jsii_.Get(
 		j,
@@ -119,7 +119,7 @@ func (j *jsiiProxy_KubectlV36Layer) Env() *interfaces.ResourceEnvironment {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV36Layer) LayerVersionArn() *string {
+func (j *jsiiProxy_KubectlV37Layer) LayerVersionArn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -129,7 +129,7 @@ func (j *jsiiProxy_KubectlV36Layer) LayerVersionArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV36Layer) LayerVersionRef() *interfacesawslambda.LayerVersionReference {
+func (j *jsiiProxy_KubectlV37Layer) LayerVersionRef() *interfacesawslambda.LayerVersionReference {
 	var returns *interfacesawslambda.LayerVersionReference
 	_jsii_.Get(
 		j,
@@ -139,7 +139,7 @@ func (j *jsiiProxy_KubectlV36Layer) LayerVersionRef() *interfacesawslambda.Layer
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV36Layer) Node() constructs.Node {
+func (j *jsiiProxy_KubectlV37Layer) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -149,7 +149,7 @@ func (j *jsiiProxy_KubectlV36Layer) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV36Layer) PhysicalName() *string {
+func (j *jsiiProxy_KubectlV37Layer) PhysicalName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -159,7 +159,7 @@ func (j *jsiiProxy_KubectlV36Layer) PhysicalName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV36Layer) Stack() awscdk.Stack {
+func (j *jsiiProxy_KubectlV37Layer) Stack() awscdk.Stack {
 	var returns awscdk.Stack
 	_jsii_.Get(
 		j,
@@ -171,16 +171,16 @@ func (j *jsiiProxy_KubectlV36Layer) Stack() awscdk.Stack {
 
 
 // Experimental.
-func NewKubectlV36Layer(scope constructs.Construct, id *string) KubectlV36Layer {
+func NewKubectlV37Layer(scope constructs.Construct, id *string) KubectlV37Layer {
 	_init_.Initialize()
 
-	if err := validateNewKubectlV36LayerParameters(scope, id); err != nil {
+	if err := validateNewKubectlV37LayerParameters(scope, id); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_KubectlV36Layer{}
+	j := jsiiProxy_KubectlV37Layer{}
 
 	_jsii_.Create(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		[]interface{}{scope, id},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewKubectlV36Layer(scope constructs.Construct, id *string) KubectlV36Layer 
 }
 
 // Experimental.
-func NewKubectlV36Layer_Override(k KubectlV36Layer, scope constructs.Construct, id *string) {
+func NewKubectlV37Layer_Override(k KubectlV37Layer, scope constructs.Construct, id *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		[]interface{}{scope, id},
 		k,
 	)
@@ -203,16 +203,16 @@ func NewKubectlV36Layer_Override(k KubectlV36Layer, scope constructs.Construct, 
 //
 // Assumes it is compatible with all Lambda runtimes.
 // Experimental.
-func KubectlV36Layer_FromLayerVersionArn(scope constructs.Construct, id *string, layerVersionArn *string) awslambda.ILayerVersion {
+func KubectlV37Layer_FromLayerVersionArn(scope constructs.Construct, id *string, layerVersionArn *string) awslambda.ILayerVersion {
 	_init_.Initialize()
 
-	if err := validateKubectlV36Layer_FromLayerVersionArnParameters(scope, id, layerVersionArn); err != nil {
+	if err := validateKubectlV37Layer_FromLayerVersionArnParameters(scope, id, layerVersionArn); err != nil {
 		panic(err)
 	}
 	var returns awslambda.ILayerVersion
 
 	_jsii_.StaticInvoke(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		"fromLayerVersionArn",
 		[]interface{}{scope, id, layerVersionArn},
 		&returns,
@@ -223,16 +223,16 @@ func KubectlV36Layer_FromLayerVersionArn(scope constructs.Construct, id *string,
 
 // Imports a Layer that has been defined externally.
 // Experimental.
-func KubectlV36Layer_FromLayerVersionAttributes(scope constructs.Construct, id *string, attrs *awslambda.LayerVersionAttributes) awslambda.ILayerVersion {
+func KubectlV37Layer_FromLayerVersionAttributes(scope constructs.Construct, id *string, attrs *awslambda.LayerVersionAttributes) awslambda.ILayerVersion {
 	_init_.Initialize()
 
-	if err := validateKubectlV36Layer_FromLayerVersionAttributesParameters(scope, id, attrs); err != nil {
+	if err := validateKubectlV37Layer_FromLayerVersionAttributesParameters(scope, id, attrs); err != nil {
 		panic(err)
 	}
 	var returns awslambda.ILayerVersion
 
 	_jsii_.StaticInvoke(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		"fromLayerVersionAttributes",
 		[]interface{}{scope, id, attrs},
 		&returns,
@@ -245,16 +245,16 @@ func KubectlV36Layer_FromLayerVersionAttributes(scope constructs.Construct, id *
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
 // Deprecated: use `x instanceof Construct` instead.
-func KubectlV36Layer_IsConstruct(x interface{}) *bool {
+func KubectlV37Layer_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateKubectlV36Layer_IsConstructParameters(x); err != nil {
+	if err := validateKubectlV37Layer_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -265,16 +265,16 @@ func KubectlV36Layer_IsConstruct(x interface{}) *bool {
 
 // Returns true if the construct was created by CDK, and false otherwise.
 // Experimental.
-func KubectlV36Layer_IsOwnedResource(construct constructs.IConstruct) *bool {
+func KubectlV37Layer_IsOwnedResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
-	if err := validateKubectlV36Layer_IsOwnedResourceParameters(construct); err != nil {
+	if err := validateKubectlV37Layer_IsOwnedResourceParameters(construct); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		"isOwnedResource",
 		[]interface{}{construct},
 		&returns,
@@ -285,16 +285,16 @@ func KubectlV36Layer_IsOwnedResource(construct constructs.IConstruct) *bool {
 
 // Check whether the given construct is a Resource.
 // Experimental.
-func KubectlV36Layer_IsResource(construct constructs.IConstruct) *bool {
+func KubectlV37Layer_IsResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
-	if err := validateKubectlV36Layer_IsResourceParameters(construct); err != nil {
+	if err := validateKubectlV37Layer_IsResourceParameters(construct); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		"isResource",
 		[]interface{}{construct},
 		&returns,
@@ -303,18 +303,18 @@ func KubectlV36Layer_IsResource(construct constructs.IConstruct) *bool {
 	return returns
 }
 
-func KubectlV36Layer_PROPERTY_INJECTION_ID() *string {
+func KubectlV37Layer_PROPERTY_INJECTION_ID() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@aws-cdk/lambda-layer-kubectl-v36.KubectlV36Layer",
+		"@aws-cdk/lambda-layer-kubectl-v37.KubectlV37Layer",
 		"PROPERTY_INJECTION_ID",
 		&returns,
 	)
 	return returns
 }
 
-func (k *jsiiProxy_KubectlV36Layer) AddPermission(id *string, permission *awslambda.LayerVersionPermission) {
+func (k *jsiiProxy_KubectlV37Layer) AddPermission(id *string, permission *awslambda.LayerVersionPermission) {
 	if err := k.validateAddPermissionParameters(id, permission); err != nil {
 		panic(err)
 	}
@@ -325,7 +325,7 @@ func (k *jsiiProxy_KubectlV36Layer) AddPermission(id *string, permission *awslam
 	)
 }
 
-func (k *jsiiProxy_KubectlV36Layer) ApplyRemovalPolicy(policy awscdk.RemovalPolicy) {
+func (k *jsiiProxy_KubectlV37Layer) ApplyRemovalPolicy(policy awscdk.RemovalPolicy) {
 	if err := k.validateApplyRemovalPolicyParameters(policy); err != nil {
 		panic(err)
 	}
@@ -336,7 +336,7 @@ func (k *jsiiProxy_KubectlV36Layer) ApplyRemovalPolicy(policy awscdk.RemovalPoli
 	)
 }
 
-func (k *jsiiProxy_KubectlV36Layer) GeneratePhysicalName() *string {
+func (k *jsiiProxy_KubectlV37Layer) GeneratePhysicalName() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -349,7 +349,7 @@ func (k *jsiiProxy_KubectlV36Layer) GeneratePhysicalName() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KubectlV36Layer) GetResourceArnAttribute(arnAttr *string, arnComponents *awscdk.ArnComponents) *string {
+func (k *jsiiProxy_KubectlV37Layer) GetResourceArnAttribute(arnAttr *string, arnComponents *awscdk.ArnComponents) *string {
 	if err := k.validateGetResourceArnAttributeParameters(arnAttr, arnComponents); err != nil {
 		panic(err)
 	}
@@ -365,7 +365,7 @@ func (k *jsiiProxy_KubectlV36Layer) GetResourceArnAttribute(arnAttr *string, arn
 	return returns
 }
 
-func (k *jsiiProxy_KubectlV36Layer) GetResourceNameAttribute(nameAttr *string) *string {
+func (k *jsiiProxy_KubectlV37Layer) GetResourceNameAttribute(nameAttr *string) *string {
 	if err := k.validateGetResourceNameAttributeParameters(nameAttr); err != nil {
 		panic(err)
 	}
@@ -381,7 +381,7 @@ func (k *jsiiProxy_KubectlV36Layer) GetResourceNameAttribute(nameAttr *string) *
 	return returns
 }
 
-func (k *jsiiProxy_KubectlV36Layer) ToString() *string {
+func (k *jsiiProxy_KubectlV37Layer) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
